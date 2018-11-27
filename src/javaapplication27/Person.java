@@ -12,12 +12,12 @@ package javaapplication27;
 public class Person {
     private String name;
     private String last_name;
-    private int age;
+    private int birthdate;
 
-    public Person(String name, String last_name, int age) {
+    public Person(String name, String last_name, int birthdate) {
         this.name = name;
         this.last_name = last_name;
-        this.age = age;
+        this.birthdate = birthdate;
     }
 
     public String getName() {
@@ -28,9 +28,10 @@ public class Person {
         return last_name;
     }
 
-    public int getAge() {
-        return age;
+    public int getBirthdate() {
+        return birthdate;
     }
-    
+
+   
     
 }

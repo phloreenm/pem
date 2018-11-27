@@ -13,8 +13,8 @@ public class Employee extends Person{
     
     private double salary;
     
-    public Employee(String name, String last_name, int age,double salary) {
-        super(name, last_name, age);
+    public Employee(String name, String last_name, int birthdate,double salary) {
+        super(name, last_name, birthdate);
         this.salary = salary;
     }
 
