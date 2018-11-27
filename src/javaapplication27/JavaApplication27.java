@@ -9,6 +9,13 @@ package javaapplication27;
  *
  * @author stasi
  */
-public class Employee {
+public class JavaApplication27 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+    }
     
 }
