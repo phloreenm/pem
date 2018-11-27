@@ -5,7 +5,6 @@
  */
 package javaapplication27;
 
-import sun.nio.cs.ext.TIS_620;
 
 /**
  *
@@ -14,19 +13,18 @@ import sun.nio.cs.ext.TIS_620;
 public class Manager extends Employee{
     
     
+   
     private double bonus;
-
+    
     public Manager(String name, String last_name, int birthdate, double salary) {
-        super(name, last_name,birthdate , salary);
-        setBonus(bonus);
+        super(name, last_name, birthdate , salary);
+        
     }
 
-    public double getBonus() {
-        return bonus;
-    }
-
-    public void setBonus(double bonus) {
-      this.bonus=getSalary()*0.5;
+    
+    public double managerBonus(double bonusPercentage) {
+      bonus=getSalary()*bonusPercentage;
+      return bonus;
     }
   
     }
