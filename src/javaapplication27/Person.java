@@ -9,7 +9,7 @@ package javaapplication27;
  *
  * @author stasi
  */
-public class Person {
+public abstract class Person {
     private String name;
     private String last_name;
     private int birthdate;
