@@ -15,16 +15,21 @@ public class Manager extends Employee{
     
    
     private double bonus;
+    private double bonusPercentage;
     
-    public Manager(String name, String last_name, int birthdate, double salary) {
+    public Manager(String name, String last_name, int birthdate, double salary,double bonusPercentage) {
         super(name, last_name, birthdate , salary);
-        
+        setManagerBonus(bonusPercentage);
     }
 
     
-    public double managerBonus(double bonusPercentage) {
+    public double setManagerBonus(double bonusPercentage) {
       bonus=getSalary()*bonusPercentage;
       return bonus;
+    }
+
+    public double getBonus() {
+        return bonus;
     }
   
     }

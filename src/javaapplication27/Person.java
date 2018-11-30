@@ -5,19 +5,22 @@
  */
 package javaapplication27;
 
+import java.time.Year;
+
 /**
  *
  * @author stasi
  */
 public abstract class Person {
+    
     private String name;
     private String last_name;
-    private int birthdate;
+    private int age;
 
     public Person(String name, String last_name, int birthdate) {
         this.name = name;
         this.last_name = last_name;
-        this.birthdate = birthdate;
+        this.age = Year.now().getValue()-birthdate;
     }
 
     public String getName() {
@@ -28,8 +31,20 @@ public abstract class Person {
         return last_name;
     }
 
-    public int getBirthdate() {
-        return birthdate;
+    public int getAge() {
+        return age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
    
