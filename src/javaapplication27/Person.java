@@ -14,24 +14,26 @@ import java.time.Year;
 public abstract class Person {
     
     private String name;
-    private String last_name;
-    private int age;
+    private String lastName;
+    private int birthdate;
+   
 
     public Person(String name, String last_name, int birthdate) {
         this.name = name;
-        this.last_name = last_name;
-        this.age = Year.now().getValue()-birthdate;
+        this.lastName = lastName;
+        this.birthdate = birthdate;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getLast_name() {
-        return last_name;
+    public String getLastName() {
+        return lastName;
     }
 
     public int getAge() {
+        int age=Year.now().getValue()-this.birthdate;
         return age;
     }
 
@@ -39,13 +41,11 @@ public abstract class Person {
         this.name = name;
     }
 
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
+    public void setLastName(String last_name) {
+        this.lastName = lastName;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+    
 
    
     
